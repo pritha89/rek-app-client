@@ -67,6 +67,9 @@ class App extends Component {
                   <LinkContainer to="/file/new">
                     <NavItem>Upload Image</NavItem>
                   </LinkContainer>
+                  <LinkContainer to="/file/search">
+                    <NavItem>Search Image</NavItem>
+                  </LinkContainer>
                   <NavItem onClick={this.handleLogout}>Logout</NavItem>
                   </Fragment>
                 : <Fragment>

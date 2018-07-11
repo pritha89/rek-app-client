@@ -5,6 +5,7 @@ import Home from "./containers/Home";
 import Login from "./containers/Login";
 import Signup from "./containers/Signup";
 import NewFile from "./containers/NewFile";
+import SearchImage from "./containers/SearchImage";
 import NotFound from "./containers/NotFound";
 import AuthenticatedRoute from "./components/AuthenticatedRoute";
 import UnauthenticatedRoute from "./components/UnauthenticatedRoute";
@@ -15,6 +16,7 @@ export default ({ childProps }) =>
         <UnauthenticatedRoute path="/login" exact component={Login} props={childProps} />
         <UnauthenticatedRoute path="/signup" exact component={Signup} props={childProps} />
         <AuthenticatedRoute path="/file/new" exact component={NewFile} props={childProps} />
+        <AuthenticatedRoute path="/file/search" exact component={SearchImage} props={childProps} />
         { /* Finally, catch all unmatched routes */}
         <Route component={NotFound} />
     </Switch>;
